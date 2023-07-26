@@ -202,6 +202,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
         Route::get('/show-level-quizzes/{id}',  [QuizController::class, 'showLevelQuizzes']);
         Route::get('/show-level-homeworks/{id}',  [HomeworkController::class, 'showLevelHomeworks']);
         Route::get('/show-level-videos/{id}',  [VideoController::class, 'showLevelVideos']);
+        Route::get('/videos/stream/{key}',  [VideoController::class, 'stream']);
         Route::get('/user-statistics/{id}',  [UserController::class, 'userStatistics']);
         Route::get('/user-weeks/{id}',  [UserWeekEnrollController::class, 'userWeeks']);
         Route::get('/user-quiz-model-answer/{id}', [UserQuizController::class, 'getUserAnswers']);

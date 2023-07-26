@@ -341,9 +341,9 @@
                           @enderror
                         </div>  
                         <div class="mb-3">
-                          <label class="form-label" for="basic-default-fullname">Video Path</label>
-                          <input type="text" class="form-control" id="basic-default-fullname" placeholder="video path" name="video_path" value="{{ $video->video_path }}">
-                          @error('video_path')
+                          <label class="form-label" for="basic-default-fullname">Choose Local Video</label>
+                          <input type="text" class="form-control" id="basic-default-fullname" placeholder="video path" name="video_file" value="{{ $video->video_file }}">
+                          @error('video_file')
                           <div class="text-danger">{{ $message }}</div>
                           @enderror
                         </div>  

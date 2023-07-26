@@ -25,11 +25,12 @@ class VideoRequest extends FormRequest
     {
         return [
             'week_id' => ['required'],
-            'iframe' => ['required:video_path'],
-            'noviews' => ['required'],
-            'minutes_views' => ['required'],
-            // 'type' => ['required'],
-            'video_dauration' => ['required'],
+            'iframe' => ['required_unless:type,local'],
+            'noviews' => ['required', 'numeric'],
+            'minutes_views' => ['required', 'numeric'],
+            'video_file' => ['required_if:type,local'],
+            'type' => ['required'],
+            'video_duration' => ['required','numeric'],
             'title' => ['required'],
             'level' => ['required'],
         ];

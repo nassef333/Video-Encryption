@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 
-<html
-  lang="en"
-  class="light-style layout-menu-fixed"
-  dir="ltr"
-  data-theme="theme-default"
-  data-/assets-path="..//assets/"
-  data-template="vertical-menu-template-free"
->
-  <head>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default"
+    data-/assets-path="..//assets/" data-template="vertical-menu-template-free">
+
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
-    />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
     <title>Add Video</title>
 
@@ -26,9 +19,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
 
     <!-- Icons. Uncomment required icon fonts -->
     <link rel="stylesheet" href="/assets/fonts/boxicons.css" />
@@ -49,438 +41,448 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="..//assets/js/config.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
-      <div class="layout-container">
-        <!-- Menu -->
+        <div class="layout-container">
+            <!-- Menu -->
 
-        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-          <div class="app-brand demo">
-            <a href="/admin/dashboard" class="app-brand-link">
-              <span class="app-brand-logo demo" style="width: 20%">
-                <img src="/assets/img/icons/logo.png" style="width: 100%" alt="">
-              </span>
-              <span class="app-brand-text menu-text fw-bolder ms-2">Mr.AbdulMoaty</span>
-            </a>
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo">
+                    <a href="/admin/dashboard" class="app-brand-link">
+                        <span class="app-brand-logo demo" style="width: 20%">
+                            <img src="/assets/img/icons/logo.png" style="width: 100%" alt="">
+                        </span>
+                        <span class="app-brand-text menu-text fw-bolder ms-2">Mr.AbdulMoaty</span>
+                    </a>
 
-            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
-              <i class="bx bx-chevron-left bx-sm align-middle"></i>
-            </a>
-          </div>
+                    <a href="javascript:void(0);"
+                        class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                        <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                    </a>
+                </div>
 
-          <div class="menu-inner-shadow"></div>
+                <div class="menu-inner-shadow"></div>
 
-          <ul class="menu-inner py-1">
-            <!-- Dashboard -->
-            <li class="menu-item">
-              <a href="/admin/dashboard" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard</div>
-              </a>
-            </li>
+                <ul class="menu-inner py-1">
+                    <!-- Dashboard -->
+                    <li class="menu-item">
+                        <a href="/admin/dashboard" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                            <div data-i18n="Analytics">Dashboard</div>
+                        </a>
+                    </li>
 
-
-
-            {{-- PAGES --}}
-            <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">Categories & Products</span>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                <div data-i18n="Account Settings">Categories</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="/admin/category/create" class="menu-link">
-                    <div data-i18n="Account">Add Category</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="/admin/category" class="menu-link">
-                    <div data-i18n="Notifications">Show Categories</div>
-                  </a>
-                </li>
-                {{-- <li class="menu-item">
+                    {{-- PAGES --}}
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Categories & Products</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                            <div data-i18n="Account Settings">Categories</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="/admin/category/create" class="menu-link">
+                                    <div data-i18n="Account">Add Category</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/admin/category" class="menu-link">
+                                    <div data-i18n="Notifications">Show Categories</div>
+                                </a>
+                            </li>
+                            {{-- <li class="menu-item">
                   <a href="pages-account-settings-connections.html" class="menu-link">
                     <div data-i18n="Connections">Archieved Categories</div>
                   </a>
                 </li> --}}
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
-                <div data-i18n="Authentications">Products</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="/admin/product/create" class="menu-link">
-                    <div data-i18n="Basic">Add Product</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="/admin/product" class="menu-link">
-                    <div data-i18n="Basic">Products</div>
-                  </a>
-                </li>
-                {{-- <li class="menu-item">
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                            <div data-i18n="Authentications">Products</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="/admin/product/create" class="menu-link">
+                                    <div data-i18n="Basic">Add Product</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/admin/product" class="menu-link">
+                                    <div data-i18n="Basic">Products</div>
+                                </a>
+                            </li>
+                            {{-- <li class="menu-item">
                   <a href="auth-forgot-password-basic.html" class="menu-link" target="_blank">
                     <div data-i18n="Basic">Arcieved Products</div>
                   </a>
                 </li> --}}
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
-                <div data-i18n="Misc">Orders</div>
-              </a>
-              <ul class="menu-sub">
-                <!-- <li class="menu-item">
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                            <div data-i18n="Misc">Orders</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <!-- <li class="menu-item">
                   <a href="pages-misc-under-maintenance.html" class="menu-link">
                     <div data-i18n="Under Maintenance">Return order</div>
                   </a>
                 </li> -->
-                <li class="menu-item">
-                  <a href="/admin/new-orders" class="menu-link">
-                    <div data-i18n="Error">New Orders</div>
-                  </a>
-                </li>                
-                <li class="menu-item">
-                  <a href="/admin/order" class="menu-link">
-                    <div data-i18n="Error">All Orders</div>
-                  </a>
-                </li>
-                <!-- <li class="menu-item">
+                            <li class="menu-item">
+                                <a href="/admin/new-orders" class="menu-link">
+                                    <div data-i18n="Error">New Orders</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/admin/order" class="menu-link">
+                                    <div data-i18n="Error">All Orders</div>
+                                </a>
+                            </li>
+                            <!-- <li class="menu-item">
                   <a href="pages-misc-under-maintenance.html" class="menu-link">
                     <div data-i18n="Under Maintenance">Returned orders</div>
                   </a>
                 </li> -->
-              </ul>
-            </li>
+                        </ul>
+                    </li>
 
-            <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">Statics</span>
-            </li>
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Statics</span>
+                    </li>
 
-            <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
-                <div data-i18n="Misc">Brands</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="/admin/brand/create" class="menu-link">
-                    <div data-i18n="Error">New Brand</div>
-                  </a>
-                </li>                
-                <li class="menu-item">
-                  <a href="/admin/brand" class="menu-link">
-                    <div data-i18n="Error">All Brands</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                            <div data-i18n="Misc">Brands</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="/admin/brand/create" class="menu-link">
+                                    <div data-i18n="Error">New Brand</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/admin/brand" class="menu-link">
+                                    <div data-i18n="Error">All Brands</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                            <div data-i18n="Misc">Areas</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="/admin/area/create" class="menu-link">
+                                    <div data-i18n="Error">New Area</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/admin/area" class="menu-link">
+                                    <div data-i18n="Error">All Areas</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div data-i18n="Error">Edit Area</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
-            <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
-                <div data-i18n="Misc">Areas</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="/admin/area/create" class="menu-link">
-                    <div data-i18n="Error">New Area</div>
-                  </a>
-                </li>                
-                <li class="menu-item">
-                  <a href="/admin/area" class="menu-link">
-                    <div data-i18n="Error">All Areas</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#" class="menu-link">
-                    <div data-i18n="Error">Edit Area</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
+                    <!-- Components -->
+                    <li class="menu-header small text-uppercase"><span class="menu-header-text">ADMINS</span></li>
 
-            <!-- Components -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">ADMINS</span></li>
-            
-            <!-- Extended components -->
-            <li class="menu-item open active">
-              <a href="javascript:void(0)" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-copy"></i>
-                <div data-i18n="Extended UI">Admins</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item active">
-                  <a href="/admin/admin/create" class="menu-link">
-                    <div data-i18n="Perfect Scrollbar">Add Admin</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="/admin/admin" class="menu-link">
-                    <div data-i18n="Text Divider">Show Admins</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
+                    <!-- Extended components -->
+                    <li class="menu-item open active">
+                        <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-copy"></i>
+                            <div data-i18n="Extended UI">Admins</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item active">
+                                <a href="/admin/admin/create" class="menu-link">
+                                    <div data-i18n="Perfect Scrollbar">Add Admin</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/admin/admin" class="menu-link">
+                                    <div data-i18n="Text Divider">Show Admins</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
+                </ul>
+            </aside>
+            <!-- / Menu -->
 
-          </ul>
-        </aside>
-        <!-- / Menu -->
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Navbar -->
 
-        <!-- Layout container -->
-        <div class="layout-page">
-          <!-- Navbar -->
-
-          <nav class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
-            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
-                <i class="bx bx-menu bx-sm"></i>
-              </a>
-            </div>
-          
-            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-              <!-- Search -->
-              <div class="navbar-nav align-items-center">
-                <div class="nav-item d-flex align-items-center">
-                  <i class="bx bx-search fs-4 lh-0"></i>
-                  <input type="text" class="form-control border-0 shadow-none" placeholder="Search..." aria-label="Search..." />
-                </div>
-              </div>
-              <!-- /Search -->
-          
-              <ul class="navbar-nav flex-row align-items-center ms-auto">
-                <!-- Place this tag where you want the button to render. -->
-                <li class="nav-item lh-1 me-3">
-                  <a class="github-button" href="https://github.com/themeselection/sneat-html-admin-template-free" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
-                </li>
-          
-                <!-- User -->
-                <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                    <div class="avatar avatar-online">
-                      <img src="..//assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                <nav class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+                    id="layout-navbar">
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                            <i class="bx bx-menu bx-sm"></i>
+                        </a>
                     </div>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar avatar-online">
-                              <img src="..//assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                        <!-- Search -->
+                        <div class="navbar-nav align-items-center">
+                            <div class="nav-item d-flex align-items-center">
+                                <i class="bx bx-search fs-4 lh-0"></i>
+                                <input type="text" class="form-control border-0 shadow-none"
+                                    placeholder="Search..." aria-label="Search..." />
                             </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
-                            <small class="text-muted">Admin</small>
-                          </div>
                         </div>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-user me-2"></i>
-                        <span class="align-middle">My Profile</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-cog me-2"></i>
-                        <span class="align-middle">Settings</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <span class="d-flex align-items-center align-middle">
-                          <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                          <span class="flex-grow-1 align-middle">Billing</span>
-                          <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="auth-login-basic.html">
-                        <i class="bx bx-power-off me-2"></i>
-                        <span class="align-middle">Log Out</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <!--/ User -->
-              </ul>
-            </div>
-          </nav>
-          
+                        <!-- /Search -->
 
-          <!-- / Navbar -->
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+                            <!-- Place this tag where you want the button to render. -->
+                            <li class="nav-item lh-1 me-3">
+                                <a class="github-button"
+                                    href="https://github.com/themeselection/sneat-html-admin-template-free"
+                                    data-icon="octicon-star" data-size="large" data-show-count="true"
+                                    aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
+                            </li>
 
-          <!-- Content wrapper -->
-          <div class="content-wrapper">
-            <!-- Content -->
+                            <!-- User -->
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
+                                    data-bs-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <img src="..//assets/img/avatars/1.png" alt
+                                            class="w-px-40 h-auto rounded-circle" />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar avatar-online">
+                                                        <img src="..//assets/img/avatars/1.png" alt
+                                                            class="w-px-40 h-auto rounded-circle" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <span class="fw-semibold d-block">John Doe</span>
+                                                    <small class="text-muted">Admin</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bx bx-user me-2"></i>
+                                            <span class="align-middle">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bx bx-cog me-2"></i>
+                                            <span class="align-middle">Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="d-flex align-items-center align-middle">
+                                                <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                                                <span class="flex-grow-1 align-middle">Billing</span>
+                                                <span
+                                                    class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="auth-login-basic.html">
+                                            <i class="bx bx-power-off me-2"></i>
+                                            <span class="align-middle">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/ User -->
+                        </ul>
+                    </div>
+                </nav>
 
-            <div class="container-fluid flex-grow-1 container-p-y">
-              <!-- Layout Demo -->
-              
-              
+                <!-- / Navbar -->
 
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    <!-- Content -->
 
-              <div class="col-xl">
-                <div class="card mb-4">
-                  <div class="card-header d-flex justify-content-between align-items-center">
-                    <h4 class="mb-4">Add Admin</h4>
-                    <small class="text-muted float-end">Admins</small>
-                  </div>
-                  <div class="card-body">
-                    <form action="/videos" method="POST" enctype="multipart/form-data">
-                      @csrf
-                        <div class="mb-3">
-                          <label class="form-label" for="basic-default-fullname">Video Title</label>
-                          <input type="text" class="form-control" id="basic-default-fullname" placeholder="video title" name="title">
-                          @error('title')
-                          <div class="text-danger">{{ $message }}</div>
-                          @enderror
-                        </div>  
-                        <div class="mb-3">
-                          <label class="form-label" for="basic-default-fullname">Video Path</label>
-                          <input type="text" class="form-control" id="basic-default-fullname" placeholder="video path" name="video_path">
-                          @error('video_path')
-                          <div class="text-danger">{{ $message }}</div>
-                          @enderror
-                        </div>  
-                        <div class="mb-3">
-                          <label class="form-label" for="basic-default-fullname">iframe</label>
-                          <input type="text" class="form-control" id="basic-default-fullname" placeholder="iframe" name="iframe">
-                          @error('iframe')
-                          <div class="text-danger">{{ $message }}</div>
-                          @enderror
-                        </div> 
+                    <div class="container-fluid flex-grow-1 container-p-y">
+                        <!-- Layout Demo -->
 
+                        <div class="col-xl">
+                            <div class="card mb-4">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h4 class="mb-4">Add Admin</h4>
+                                    <small class="text-muted float-end">Admins</small>
+                                </div>
+                                <div class="card-body">
+                                    <form action="/videos" method="POST" enctype="multipart/form-data">
+                                        @csrf
+                                        <div class="mb-3">
+                                            <label class="form-label" for="basic-default-fullname">Video Title</label>
+                                            <input type="text" class="form-control" id="basic-default-fullname"
+                                                placeholder="video title" name="title">
+                                            @error('title')
+                                                <div class="text-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="basic-default-fullname">Choose Local
+                                                Video</label>
+                                            <input type="file" class="form-control" id="basic-default-fullname"
+                                                name="video_file">
+                                            @error('video_file')
+                                                <div class="text-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="basic-default-fullname">iframe</label>
+                                            <input type="text" class="form-control" id="basic-default-fullname"
+                                                placeholder="iframe" name="iframe">
+                                            @error('iframe')
+                                                <div class="text-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
 
-                        <div class="d-flex">
-                          <div class="mb-3 w-50">
-                            <label class="form-label" for="basic-default-fullname">number of views</label>
-                            <input type="text" class="form-control" id="basic-default-fullname" placeholder="number of views" name="noviews">
-                            @error('noviews')
-                            <div class="text-danger">{{ $message }}</div>
-                            @enderror
-                          </div>  
-                          <div class="mb-3 w-50">
-                            <label class="form-label" for="basic-default-fullname">Time Between Views</label>
-                            <input type="text" class="form-control" id="basic-default-fullname" placeholder="Time Between Views" name="minutes_views" >
-                            @error('minutes_views')
-                            <div class="text-danger">{{ $message }}</div>
-                            @enderror
-                          </div>      
+                                        <div class="d-flex">
+                                            <div class="mb-3 w-50">
+                                                <label class="form-label" for="basic-default-fullname">number of
+                                                    views</label>
+                                                <input type="text" class="form-control"
+                                                    id="basic-default-fullname" placeholder="number of views"
+                                                    name="noviews">
+                                                @error('noviews')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                            <div class="mb-3 w-50">
+                                                <label class="form-label" for="basic-default-fullname">Time Between
+                                                    Views</label>
+                                                <input type="text" class="form-control"
+                                                    id="basic-default-fullname" placeholder="Time Between Views"
+                                                    name="minutes_views">
+                                                @error('minutes_views')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="mb-3 w-50">
+                                                <label class="form-label" for="basic-default-fullname">Type</label>
+                                                <select class="form-control" id="basic-default-fullname"
+                                                    name="type">
+                                                    <option value="local">local</option>
+                                                    <option value="youtube">youtube</option>
+                                                    <option value="vimeo">vimeo</option>
+                                                    <option value="videocipher">videocipher</option>
+                                                    <option value="bunny">bunny</option>
+                                                </select>
+                                                @error('type')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                            <div class="mb-3 w-50">
+                                                <label class="form-label" for="basic-default-fullname">Video
+                                                    Duration</label>
+                                                <input type="text" class="form-control"
+                                                    id="basic-default-fullname" placeholder="Time Between Views"
+                                                    name="video_duration">
+                                                @error('video_duration')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex">
+
+                                            <div class="mb-3 w-50">
+                                                <label class="form-label" for="basic-default-fullname">Level</label>
+                                                <select class="form-control" id="basic-default-fullname"
+                                                    name="level">
+                                                    <option value="1">الأول الثانوي</option>
+                                                    <option value="1">الثاني الثانوي</option>
+                                                </select>
+                                                @error('level')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                            <div class="mb-3 w-50">
+                                                <label class="form-label" for="basic-default-fullname">week</label>
+                                                <select class="form-control" id="basic-default-fullname"
+                                                    name="week_id">
+                                                    @foreach ($weeks as $week)
+                                                        <option value="{{ $week->id }}">{{ $week->name }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                                @error('week_id')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Add Video</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-flex">                   
-                          <div class="mb-3 w-50">
-                            <label class="form-label" for="basic-default-fullname">Type</label>
-                            <select class="form-control" id="basic-default-fullname" name="type">
-                              <option value="local" >local</option>
-                              <option value="youtube">youtube</option>
-                              <option value="vimeo" >vimeo</option>
-                              <option value="videocipher">videocipher</option>
-                              <option value="bunny">bunny</option>
-                            </select>
-                            @error('type')
-                            <div class="text-danger">{{ $message }}</div>
-                            @enderror
-                          </div> 
-                          <div class="mb-3 w-50">
-                            <label class="form-label" for="basic-default-fullname">Video Dauration</label>
-                            <input type="text" class="form-control" id="basic-default-fullname" placeholder="Time Between Views" name="video_dauration">
-                            @error('video_dauration')
-                            <div class="text-danger">{{ $message }}</div>
-                            @enderror
-                          </div>   
-                        </div>
 
-                        <div class="d-flex">
-                          
-                        <div class="mb-3 w-50">
-                          <label class="form-label" for="basic-default-fullname">Level</label>
-                          <select class="form-control" id="basic-default-fullname" name="level">
-                            <option value="1" >الأول الثانوي</option>
-                            <option value="1" >الثاني الثانوي</option>
-                          </select>                          
-                          @error('level')
-                          <div class="text-danger">{{ $message }}</div>
-                          @enderror
+                        <!--/ Layout Demo -->
+                    </div>
+                    <!-- / Content -->
+
+                    <!-- Footer -->
+                    <footer class="content-footer footer bg-footer-theme">
+                        <div class="mb-2 mb-md-2" style="text-align: center;">
+                            ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            , powered by
+                            <a href="https://wa.me/201112377882" target="_blank"
+                                class="footer-link fw-bolder">Nassef</a>,
+                            all rights reserved.
                         </div>
-                        <div class="mb-3 w-50">
-                          <label class="form-label" for="basic-default-fullname">week</label>
-                          <select class="form-control" id="basic-default-fullname" name="week_id">
-                            @foreach ($weeks as $week)
-                              <option value="{{ $week->id }}">{{ $week->name }}</option>
-                            @endforeach
-                          </select>
-                          @error('week_id')
-                          <div class="text-danger">{{ $message }}</div>
-                          @enderror
-                        </div> 
-                        </div>
-                      <button type="submit" class="btn btn-primary">Edit User</button>
-                    </form>
-                  </div>
+                    </footer>
+                    <!-- / Footer -->
+
+                    <div class="content-backdrop fade"></div>
                 </div>
-              </div>
-
-
-
-
-
-
-
-
-
-              <!--/ Layout Demo -->
+                <!-- Content wrapper -->
             </div>
-            <!-- / Content -->
-
-            <!-- Footer -->
-            <footer class="content-footer footer bg-footer-theme">
-              <div class="mb-2 mb-md-2" style="text-align: center;">
-                ©
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                , powered by
-                <a href="https://wa.me/201112377882" target="_blank" class="footer-link fw-bolder">Nassef</a>, 
-                all rights reserved.
-              </div>
-          </footer>
-            <!-- / Footer -->
-
-            <div class="content-backdrop fade"></div>
-          </div>
-          <!-- Content wrapper -->
+            <!-- / Layout page -->
         </div>
-        <!-- / Layout page -->
-      </div>
 
-      <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
-
 
     <!-- Core JS -->
     <!-- build:js /assets/vendor/js/core.js -->
@@ -499,52 +501,52 @@
 
     <!-- Page JS -->
     <script>
-  function previewImage(event) {
-var input = event.target;
-var preview = document.getElementById('imagePreview');
+        function previewImage(event) {
+            var input = event.target;
+            var preview = document.getElementById('imagePreview');
 
-if (input.files && input.files[0]) {
-var reader = new FileReader();
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
 
-reader.onload = function (e) {
-  preview.innerHTML = '<img src="' + e.target.result + '" alt="Image Preview" class="img-thumbnail">';
-};
+                reader.onload = function(e) {
+                    preview.innerHTML = '<img src="' + e.target.result + '" alt="Image Preview" class="img-thumbnail">';
+                };
 
-reader.readAsDataURL(input.files[0]);
-} else {
-preview.innerHTML = '';
-}
-}
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                preview.innerHTML = '';
+            }
+        }
 
-document.getElementById('addInputButton').addEventListener('click', function() {
-  var inputContainer = document.createElement('div');
-  inputContainer.className = 'mb-3';
+        document.getElementById('addInputButton').addEventListener('click', function() {
+            var inputContainer = document.createElement('div');
+            inputContainer.className = 'mb-3';
 
-  var label = document.createElement('label');
-  label.className = 'form-label';
-  label.textContent = 'image';
+            var label = document.createElement('label');
+            label.className = 'form-label';
+            label.textContent = 'image';
 
-  var div = document.createElement('div');
-  div.id = 'imagePreview';
+            var div = document.createElement('div');
+            div.id = 'imagePreview';
 
-  var input = document.createElement('input');
-  input.type = 'file';
-  input.className = 'form-control';
-  input.name = 'image[]'; // Set the name attribute to "image[]"
-  input.accept = 'image/*';
-  input.placeholder = 'Upload Image';
-  input.onchange = previewImage;
-  input.value = '{{ old("image") }}';
+            var input = document.createElement('input');
+            input.type = 'file';
+            input.className = 'form-control';
+            input.name = 'image[]'; // Set the name attribute to "image[]"
+            input.accept = 'image/*';
+            input.placeholder = 'Upload Image';
+            input.onchange = previewImage;
+            input.value = '{{ old('image') }}';
 
-  inputContainer.appendChild(label);
-  inputContainer.appendChild(div);
-  inputContainer.appendChild(input);
+            inputContainer.appendChild(label);
+            inputContainer.appendChild(div);
+            inputContainer.appendChild(input);
 
-  document.getElementById('dynamicInputsContainer').appendChild(inputContainer);
-});
-
-</script>
+            document.getElementById('dynamicInputsContainer').appendChild(inputContainer);
+        });
+    </script>
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </body>
+</body>
+
 </html>

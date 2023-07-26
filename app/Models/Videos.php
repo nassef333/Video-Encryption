@@ -22,18 +22,21 @@ class Videos extends Model
         'week_id',
         'level',
     ];
-    
-    public function week()
-     {
-         return $this->belongsTo(Weeks::class);
-     }
-     public function users()
-     {
-         return $this->belongsToMany(Users::class, 'user_videos', 'video_id', 'user_id')->withPivot('id', 'count', 'created_at', 'updated_at')->wherePivot('deleted_at', NULL);
-     }
-     public function comments()
-     {
-         return $this->hasMany(Comments::class);
-     }
 
+    protected $casts = [
+        'hashed_links' => 'array'
+    ];
+
+    public function week()
+    {
+        return $this->belongsTo(Weeks::class);
+    }
+    public function users()
+    {
+        return $this->belongsToMany(Users::class, 'user_videos', 'video_id', 'user_id')->withPivot('id', 'count', 'created_at', 'updated_at')->wherePivot('deleted_at', NULL);
+    }
+    public function comments()
+    {
+        return $this->hasMany(Comments::class);
+    }
 }
